@@ -16,7 +16,7 @@ struct StartButtonView: View {
             print("Exit the onboarding")
         }, label: {
             HStack(spacing: 8) {
-                Text("Start button")
+                Text("Start")
                 
                 Image(systemName: "arrow.right.circle")
                     .imageScale(.large)

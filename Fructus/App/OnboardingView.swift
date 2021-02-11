@@ -11,13 +11,15 @@ struct OnboardingView: View {
     
     // MARK: - Properties
     
+    var fruits: [Fruit]
+    
     // MARK: - Body
     
     var body: some View {
         
         TabView {
-            ForEach(0..<5) { item in
-                FuitCardView()
+            ForEach(fruits) { item in
+                FuitCardView(fruit: item)
             }//: Loop
             
         } //: TabView
@@ -30,6 +32,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(fruits: [fruitsData[0]])
     }
 }
