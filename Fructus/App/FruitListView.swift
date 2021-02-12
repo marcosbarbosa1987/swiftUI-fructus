@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FruitListView.swift
 //  Fructus
 //
 //  Created by Marcos Barbosa on 11/02/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FruitListView: View {
     
     // MARK: - Properties
     
@@ -32,6 +32,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(fruits: fruitsData)
+        FruitListView(fruits: fruitsData)
     }
 }
