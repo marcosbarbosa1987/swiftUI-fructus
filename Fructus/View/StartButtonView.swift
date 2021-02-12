@@ -13,7 +13,6 @@ struct StartButtonView: View {
     
     @AppStorage("isOnboarding") var isOnboarding: Bool?
     
-    
     // MARK: - Body
     
     var body: some View {
