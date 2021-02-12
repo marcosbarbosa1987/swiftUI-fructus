@@ -42,6 +42,8 @@ struct FruitDetailView: View {
                         
                         // Nutrients
                         
+                        FruitNutrientsView(fruit: fruit)
+                        
                         // SubHeadline
                         
                         Text("Learn more about \(fruit.title.uppercased())")

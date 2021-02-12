@@ -19,7 +19,7 @@ struct OnboardingView: View {
         
         TabView {
             ForEach(fruits) { item in
-                FuitCardView(fruit: item)
+                FruitCardView(fruit: item)
             }//: Loop
             
         } //: TabView

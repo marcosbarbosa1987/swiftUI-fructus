@@ -1,5 +1,5 @@
 //
-//  FuitCardView.swift
+//  FruitCardView.swift
 //  Fructus
 //
 //  Created by Marcos Barbosa on 10/02/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FuitCardView: View {
+struct FruitCardView: View {
     
     // MARK: - Properties
     
@@ -63,7 +63,7 @@ struct FuitCardView: View {
 
 struct FuitCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FuitCardView(fruit: fruitsData[1])
+        FruitCardView(fruit: fruitsData[1])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }
