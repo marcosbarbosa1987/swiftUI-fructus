@@ -18,9 +18,11 @@ struct FruitListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(fruits) { item in
-                    FruitRowView(fruit: item)
-                        .padding(.vertical, 8)
+                ForEach(fruits.shuffled()) { item in
+                    NavigationLink(destination: FruitDetailView(fruit: item)){
+                        FruitRowView(fruit: item)
+                            .padding(.vertical, 8)
+                    }
                 }
             }
             .navigationTitle("Fruits")
