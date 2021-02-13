@@ -11,6 +11,8 @@ struct FruitListView: View {
     
     // MARK: - Properties
     
+    @State private var isShowingSettings: Bool = false
+    
     var fruits: [Fruit]
     
     // MARK: - Body
@@ -26,6 +28,17 @@ struct FruitListView: View {
                 }
             }
             .navigationTitle("Fruits")
+            .navigationBarItems(
+                trailing:
+                Button(action: {
+                    isShowingSettings = true
+                }) {
+                    Image(systemName: "slider.horizontal.3")
+                }//: Button
+                .sheet(isPresented: $isShowingSettings) {
+                    SettingsView()
+                }
+            )
         }//: Navigation
     }
 }
@@ -35,5 +48,6 @@ struct FruitListView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         FruitListView(fruits: fruitsData)
+            
     }
 }
