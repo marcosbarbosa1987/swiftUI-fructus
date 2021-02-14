@@ -40,6 +40,7 @@ struct FruitListView: View {
                 }
             )
         }//: Navigation
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
